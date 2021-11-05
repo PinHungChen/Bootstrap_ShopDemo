@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="Bshw_css/themify-icons.css">
+    <title>BootstrapShopDemo</title>
+  </head>
+  <style>
+    nav .navbar{
+      position: fixed;
+      z-index: 9999;
+    }
+    footer ul li a{
+      text-decoration: none;
+      color: rgb(256, 256, 256, 0.5);
+    }  
+    footer ul li a:hover{
+      text-decoration: none;
+      color: rgb(256, 256, 256);
+    }  
+
+    footer .container a{
+      padding-top: 10px;
+      border-top: solid;
+      border-radius: 50%;
+      border-color: rgb(256, 256, 256, 0.5);
+    }
+
+    .card .thumb{
+      overflow: hidden;
+      width: 100%;
+      height: 50%;
+    }
+
+    .card img.card-img-top:hover{
+    transform: scale(1.5); 
+    transition: transform 300ms linear 0s;
+    
+    }
+    
+    .card-body{
+      padding-bottom: 0px;
+    }
+
+    .price {
+      text-align: end;
+      padding:0px 20px 0px 20px;
+      margin-bottom: 20px;
+      }
+
+    .price .price {
+      color: #f00;
+      font-size: 20px;
+      padding-right:0px;
+    }
+    
+  </style>
+  <body>
+
+    <header>
+      <nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+        
+        <a class="navbar-brand" href="#"> <img src="./BSHW_Pic/banana.png" width="25" height="25" alt=""> BanaShop</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hot deals!</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">24H fast</a>
+                <a class="dropdown-item" href="#">BRANDS OF ACCESSORIES</a>
+                <a class="dropdown-item" href="#">FINS, MASKS AND SNORKELS DIVE</a>
+                <a class="dropdown-item" href="#">BAGS AND DRY BOXES DIVE</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">BCD JACKETS DIVE</a>
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        </nav>
+      </nav>
+      <div class="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/900/300?random=11" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/900/300?random=9" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/900/300?random=8" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">All</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Freediving</li>
+      </ol>
+    </nav>
+    </header>
+
+    <main>
+      
+      <div class="container-fluid">
+        <div class="row justify-content-around">
+          <div class="col-12 col-md-2">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-action" aria-current="true">All</li>
+              <li class="list-group-item list-group-item-action">photography</li>
+              <li class="list-group-item list-group-item-action">Scuba</li>
+              <li class="list-group-item list-group-item-action active">Freediving</li>
+              <li class="list-group-item list-group-item-action">3C</li>
+            </ul>
+
+          </div>
+          <div class="col-12 col-md-10">
+            <div class="row">
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p20.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">A7III Waterproof case</a> </h5>
+                    <p class="card-text">
+                      Provide the best protection for your camera</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$41000 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>  
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p18.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">BestDive Spearfishing Jacket 3mm</a> </h5>
+                    <p class="card-text">
+                      More warmth and less resistance for your diving life</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$12000 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div> 
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p16.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#"> WhiteShark MIX PRO</a> </h5>
+                    <p class="card-text">
+                      fast & safe for your fun diving</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$23000 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p19.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Valchemy V3 Carbon diving fin</a> </h5>
+                    <p class="card-text">
+                      less ris & improve your diving speed</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$23000 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p14.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">DJI FPV (2 year Care)</a> </h5>
+                    <p class="card-text">
+                      More efficient and more stable for aerial shot</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$57000 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p06.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">SONY A7M3 (ILCE-7M3)</a> </h5>
+                    <p class="card-text">
+                      High-speed hybrid autofocus (693-point phase focus point) High-speed continuous shooting up to 10 fps</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$48616 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p7.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">SONY FE 12-24mm F2.8 GM</a> </h5>
+                    <p class="card-text">
+                      Bright F2.8 maximum aperture can be used from 12 mm to 24 mm · Innovative optical design and equipped with α Lens</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$83400 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p8.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">SONY SEL2470GM </a> </h5>
+                    <p class="card-text">
+                      Bright F2.8 maximum aperture can be used from 24 mm to 70 mm · Innovative optical design and equipped with α Lens</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$56584 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p11.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">SONY FE 100-400mm F4.5-5.6 GM OSS</a> </h5>
+                    <p class="card-text">
+                      maximum aperture can be used from 100 mm to 400 mm · Innovative optical design</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$73700 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p17.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">【BLADEZ】AD32 Z-32KG </a></h5>
+                    <p class="card-text">
+                      fittness at home, the best & fast tuning weight </p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$17999 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p01.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">Apple iPhone 13 Pro (1T)</a> </h5>
+                    <p class="card-text">
+                      you know I know, just a joke</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$79999 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-xl-3 my-1">
+                <div class="card h-100">
+                  <a class="thumb" href="#">
+                  <img src="pic/p20.jpg" class="card-img-top w-100" alt="..." >
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="#">2021 iPad Pro 1T WiFi </a> </h5>
+                    <p class="card-text">
+                      Provide the best protection for your camera</p>
+                    </div>
+                      <div class="price">
+                        <p class="price">$59999 </p>
+                        <a href="#" class="btn btn-outline-dark">Buy now</a>
+                      </div>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <nav aria-label="Page navigation example" >
+        <ul class="pagination justify-content-center my-3">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      
+    </main>
+    <footer>  
+      <div class="container-fluid">
+        <div class="row bg-dark justify-content-around">
+          <div class="col-12 col-md-3">
+            <ul class="bg-dark text-white-50 my-3">
+              <li class="list-group mx-auto font-weight-bolder text-white my-2">ABOUT US</li>
+              <li class="list-group">An emerging sales and shopping platform</li>
+              <li class="list-group"><a href="#">Company Info</a></li>
+              <li class="list-group"><a href="#">Announcement</a></li>
+              <li class="list-group"><a href="#">Themes</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="bg-dark text-white-50 my-3">
+              <li class="list-group mx-auto font-weight-bolder text-white my-2">CONTACT US</li>
+              <li class="list-group">地址 : 高雄市仁武區樂樂街</li>
+              <li class="list-group">電話 : +886 919111333</li>
+              <li class="list-group">Email : customer@BanaShop.com</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="bg-dark text-white-50 my-3">
+              <li class="list-group mx-auto font-weight-bolder text-white my-2">SUPPORT</li>
+              <li class="list-group"><a href="#">Documentation</a></li>
+              <li class="list-group"><a href="#">FAQs</a></li>
+              <li class="list-group"><a href="#">Forums</a></li>
+              <li class="list-group"><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="container">
+            <a class="row bg-dark justify-content-center text-white-50 my-3">
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> Bootstrap HW By CPH</a>
+          </div>
+        </div>
+        
+      </div>
+      
+        
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
